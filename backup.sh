@@ -15,7 +15,6 @@
 #  +-- 0.0.1
 
 # ------------- system commands used by this script --------------------
-#28 10 * * *  root
 
 ID=/usr/bin/id;
 ECHO=/bin/echo;
@@ -147,7 +146,6 @@ snapshotDelete(){
 }
 snapshotLogger(){
 	printf '%s (%s) Logging message to host \n' "$(date '+%Y-%m-%d %H:%M')" $virtualmachine >> $current_log
-#	echo 'This should be in snapshot '$1 ' ' $2 | ssh miguel@192.168.10.5 'cat >> ~/Desktop/backupTest'
 }
 
 createDirectories(){
