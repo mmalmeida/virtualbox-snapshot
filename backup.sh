@@ -24,11 +24,13 @@ RM=/bin/rm;
 MV=/bin/mv;
 CP=/bin/cp;
 MKDIR=/bin/mkdir
-USERNAME=youruser
 SUDO='sudo -H -u'
 
 start_time=$(date '+%s')
 dayofweek=$(date '+%u')
+
+#Things to configure:
+USERNAME=youruser
 vdipath='/path/to/VirtualBox VMs'
 backupPath=/path/to/backup/auto
 
